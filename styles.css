@@ -1,0 +1,545 @@
+* {
+  margin: 0;
+  padding: 0;
+  border: none;
+  box-sizing: border-box;
+  text-decoration: none;
+  font-family: "League Spartan", sans-serif;
+}
+html {
+  scroll-behavior: smooth;
+}
+body {
+  width: 100%;
+}
+.hero {
+  width: 100%;
+  min-height: 100vh;
+  background-image: url(./images/heroBg.png);
+  background-position: center;
+  background-size: cover;
+  position: relative;
+  border-radius: 0% 100% 0% 100% / 76% 0% 100% 24%;
+  z-index: 10;
+}
+header {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 50px;
+  position: relative;
+  margin-bottom: 80px;
+  flex-wrap: wrap;
+}
+.brandLogo {
+  position: absolute;
+  left: 45%;
+  top: 5px;
+}
+.brandLogo img {
+  width: 60px;
+}
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+nav ul {
+  display: flex;
+  gap: 20px;
+  list-style: none;
+  flex-wrap: wrap;
+}
+nav button {
+  padding: 8px 15px;
+  background-color: #000;
+  color: #ffffff;
+  font-weight: 600;
+  font-family: "Cinzel", sans-serif;
+  transition: 0.4s ease-in-out;
+  font-size: 12px;
+}
+nav button:hover {
+  color: #000;
+}
+.navItems {
+  color: #000;
+  font-weight: 600;
+  font-size: 12px;
+  font-family: "Cinzel", sans-serif;
+  transition: 0.4s ease-in-out;
+}
+.navItems:hover {
+  color: #ffffff;
+}
+.socials svg {
+  color: #000;
+  margin-right: 20px;
+  transition: 0.4s ease-in-out;
+}
+.socials svg:hover {
+  color: #ffffff;
+}
+.heroTextContainer {
+  margin-left: 50px;
+}
+.heroTextContainer h2 {
+  font-size: 35px;
+  width: 500px;
+}
+.heroTextContainer h2 span {
+  font-size: 40px;
+}
+.heroTextContainer p {
+  width: 500px;
+  font-weight: 400;
+  font-size: 13px;
+  line-height: 140%;
+  font-family: "poppins", serif;
+  margin-top: 10px;
+}
+.heroTextContainer button {
+  padding: 10px 25px 9px 25px;
+  background-color: #000;
+  font-weight: 600;
+  color: #ffffff;
+  margin-top: 20px;
+  cursor: pointer;
+  transition: 0.4s ease-in-out;
+  font-family: "Cinzel", sans-serif;
+  margin-right: 10px;
+}
+button:hover {
+  background: transparent;
+  border: 1px solid black;
+  color: #000;
+}
+#two {
+  background-color: transparent;
+  border: 1px solid #000;
+  color: #000;
+  padding-top: 9px;
+  padding-bottom: 8px;
+}
+#two:hover {
+  background-color: #000;
+  color: #ffffff;
+}
+.about {
+  min-height: 100vh;
+  background-image: url(./images/3.png);
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+  z-index: 1;
+  padding: 40px 0;
+}
+.aboutContainer {
+  width: 100%;
+  min-height: 100vh;
+  position: relative;
+  backdrop-filter: blur(2px);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+.product {
+  width: 100%;
+  min-height: 100vh;
+  background-color: #d8d7d7;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+  z-index: 10;
+  position: relative;
+  padding: 60px 50px;
+}
+.product h2 {
+  font-family: "Cinzel Decorative", sans-serif;
+  font-size: 40px;
+  margin: 0 0 10px 0;
+}
+#phrase {
+  font-size: 35px;
+  margin: 10px 0;
+  font-family: "Cinzel", sans-serif;
+  font-weight: 300;
+}
+#phrase span {
+  color: #63bab6;
+  font-family: "Hello mama Script", sans-serif;
+  font-size: 45px;
+}
+.aboutContainer p {
+  padding: 20px 60px;
+  font-size: 14px;
+  line-height: 130%;
+  font-family: "poppins", serif;
+}
+.aboutContainer div {
+  width: 60%;
+  background: rgba(216, 215, 215, 0.5);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 40px 20px;
+  border-radius: 18px;
+}
+.aboutContainer div > span {
+  font-size: 12px;
+  letter-spacing: 3px;
+}
+.aboutContainer div > h1 {
+  letter-spacing: -2px;
+}
+#img1 {
+  position: absolute;
+  width: 200px;
+  border-radius: 19px;
+  right: 100px;
+  top: 27%;
+  z-index: -1;
+}
+#img2 {
+  position: absolute;
+  width: 200px;
+  border-radius: 19px;
+  left: 100px;
+  top: 30%;
+}
+.parent {
+  width: 100%;
+  height: 100%;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+  grid-column-gap: 0px;
+  grid-row-gap: 0px;
+  margin-top: 20px;
+}
+.parent > div {
+  min-height: 220px;
+  position: relative;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+.productName {
+  position: absolute;
+  left: 10px;
+  bottom: 10px;
+  font-family: "Cinzel", sans-serif;
+  width: 90%;
+  padding-bottom: 8px;
+  border-bottom: 1px solid #63bab6;
+  z-index: 10;
+  color: #ffffff;
+  font-weight: 500;
+  font-size: 16px;
+  text-align: left;
+  transition: 0.4s ease-in-out;
+}
+.productInfo {
+  opacity: 0;
+  font-family: "poppins", serif;
+  font-size: 14px;
+  padding: 10px;
+  line-height: 140%;
+  transition: 0.4s ease-in-out;
+  z-index: 10;
+  color: #ffffff;
+}
+.parent > div::after {
+  content: " ";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.4);
+  transition: 0.4s ease-in-out;
+}
+.parent > div:hover .productName {
+  opacity: 0;
+}
+.parent > div:hover .productInfo {
+  opacity: 1;
+}
+.div1 {
+  grid-area: 1 / 1 / 3 / 3;
+  background-size: cover;
+  background-position: center;
+  background-image: url(./images/spa-concept-with-salt-mint-lotion-towel-white-background.jpg);
+}
+.div2 {
+  grid-area: 2 / 3 / 3 / 5;
+  background-size: cover;
+  background-position: center;
+  background-image: url(./images/cosmetics-yellow-background.jpg);
+}
+.div3 {
+  grid-area: 1 / 3 / 2 / 4;
+  background-size: cover;
+  background-position: center;
+  background-image: url(./images/high-angle-body-butter-cream-plain-background.jpg);
+}
+.div4 {
+  grid-area: 1 / 4 / 2 / 5;
+  background-size: cover;
+  background-position: center;
+  background-image: url(./images/macadamia-body-lotion-skin-cream.jpg);
+}
+.div5 {
+  grid-area: 3 / 1 / 4 / 2;
+  background-size: cover;
+  background-position: center;
+  background-image: url(./images/4123084.jpg);
+}
+.div6 {
+  grid-area: 3 / 2 / 4 / 3;
+  background-size: cover;
+  background-position: center;
+  background-image: url(./images/5368433.jpg);
+}
+.div7 {
+  grid-area: 3 / 3 / 4 / 4;
+  background-size: cover;
+  background-position: center;
+  background-image: url(./images/close-up-hyaluronic-acid-tratment.jpg);
+}
+.div8 {
+  grid-area: 3 / 4 / 4 / 5;
+  background-size: cover;
+  background-position: center;
+  background-image: url(./images/body-butter-with-leaves-marble-background.jpg);
+}
+#btn {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 30px;
+}
+#btn button {
+  padding: 8px 20px;
+  background-color: #000;
+  color: #ffffff;
+  cursor: pointer;
+  transition: 0.4s ease-in-out;
+  font-size: 14px;
+  font-family: "Cinzel", sans-serif;
+  font-weight: 500;
+}
+#btn button:hover {
+  background: transparent;
+  color: #000;
+  border: 1px solid #000;
+}
+.reviewContainer {
+  padding: 50px;
+  min-height: 70vh;
+}
+.review {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  column-gap: 20px;
+}
+.review > div {
+  width: 400px;
+  padding: 20px;
+  border-radius: 16px;
+  transition: 0.4s ease-in-out;
+  box-shadow: -8px -8px 15px rgba(255, 2255, 255, 0.1),
+    8px 8px 15px rgba(0, 0, 0, 0.2);
+}
+.review > div:hover {
+  transform: scale(1.1);
+}
+.review > div > div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  margin: 20px 0 35px 0;
+}
+.review p {
+  margin-bottom: 30px;
+  font-family: "poppins", serif;
+  font-size: 14px;
+  line-height: 140%;
+}
+.user {
+  font-size: 17px;
+  margin: 20px 0;
+}
+.reviewContainer h2 {
+  font-size: 35px;
+  font-family: "Cinzel Decorative", sans-serif;
+  font-weight: 300;
+  text-align: center;
+  margin: 0 0 20px 0;
+}
+.reviewContainer h2 span {
+  color: #63bab6;
+  font-family: "Hello mama Script", sans-serif;
+  font-size: 45px;
+}
+.Contact {
+  width: 100%;
+  min-height: 100vh;
+  padding: 30px 50px 50px 50px;
+  background-image: url(./images/untitled.png);
+  background-size: cover;
+  background-position: center;
+}
+.Contact h2 {
+  font-size: 35px;
+  font-family: "Cinzel", sans-serif;
+  font-weight: 300;
+  text-align: center;
+  margin: 0 0 20px 0;
+}
+.Contact h2 span {
+  color: #63bab6;
+  font-family: "Hello mama Script", sans-serif;
+  font-size: 45px;
+}
+.Contact > div {
+  text-align: right;
+  margin-top: 5%;
+  margin-right: 150px;
+}
+.Contact ul {
+  display: flex;
+  gap: 50px;
+  list-style: none;
+  justify-content: flex-end;
+  margin-top: 20px;
+  margin-right: 10px;
+}
+.Contact h3 {
+  margin: 20px 0;
+  font-size: 45px;
+  letter-spacing: 3px;
+}
+.Contact svg {
+  color: #000;
+  transition: 0.4s ease-in-out;
+}
+.Contact svg:hover {
+  color: #d8d7d7;
+}
+.Contact p {
+  font-size: 25px;
+}
+footer {
+  padding: 50px;
+  background-color: #f1efe7;
+  display: flex;
+  justify-content: space-around;
+  gap: 60px;
+  align-items: flex-start;
+}
+footer img {
+  width: 250px;
+}
+footer ul {
+  list-style: none;
+}
+footer li {
+  font-family: "poppins", serif;
+  margin-bottom: 10px;
+  font-size: 16px;
+  color: #000;
+  transition: 0.4s ease-in-out;
+  cursor: pointer;
+  user-select: none;
+}
+footer li:hover {
+  text-decoration: underline;
+}
+footer p {
+  font-weight: 600;
+  font-size: 18px;
+  user-select: none;
+  line-height: 140%;
+}
+
+@media (max-width: 1024px) {
+  footer {
+    flex-direction: column;
+    padding: 20px;
+  }
+  #img1,
+  #img2 {
+    display: none;
+  }
+  .aboutContainer {
+    padding: 10px;
+  }
+  .aboutContainer > div {
+    width: 100%;
+  }
+  .aboutContainer p {
+    width: 100%;
+    padding: 10px;
+  }
+  .brandLogo {
+    display: none;
+  }
+  header {
+    margin-bottom: 30px;
+  }
+  header,
+  ul,
+  nav {
+    justify-content: center;
+  }
+  .hero {
+    padding: 10px;
+  }
+  .heroTextContainer {
+    padding: 10px;
+    margin: 0;
+  }
+  .heroTextContainer h2 {
+    font-size: 30px;
+    width: 100%;
+  }
+  .heroTextContainer p {
+    width: 100%;
+  }
+  .parent {
+    display: flex;
+    overflow: scroll;
+  }
+  .parent > div {
+    min-width: 300px;
+    height: 400px;
+  }
+  .product {
+    padding: 30px 20px;
+  }
+  .reviewContainer {
+    padding: 15px;
+  }
+  .Contact {
+    background-image: none;
+  }
+  .Contact > div {
+    text-align: left;
+    margin-top: 30px;
+    margin-right: 10px;
+  }
+}
